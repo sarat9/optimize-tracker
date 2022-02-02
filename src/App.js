@@ -21,8 +21,12 @@ function App() {
         <span style={{fontSize: '12px'}}>After click, wait for 5 seconds and then refresh to apear the heatmap on the screen</span>
         <Optimizer />
         {isHeatMapOn&&<HeatMap />}
-        {false&&<HeatMap />}
+        {true&&<ScrollMap />}
       </header>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
       <br/><br/><br/><br/><br/><br/><br/><br/><br/>
       <br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>

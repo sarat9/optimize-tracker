@@ -32,6 +32,7 @@ function Optimizer() {
       let mouseClick = {
           xAxis: event.x, yAxis: event.y+scrolledheight
       }
+      console.log(mouseClick)
       let pagePath = window.location.href;
       if(!eventData){eventData={}}
       if(!eventData[pagePath]){

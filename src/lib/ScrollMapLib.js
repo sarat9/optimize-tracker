@@ -37,9 +37,9 @@ ScrollMapLib.prototype = {
         this._ctx.fillStyle = paint;
         this._ctx.fillRect(0, startHeight, this._width,this._height);
         this._ctx.font = "24px Comic Sans MS";
-        this._ctx.fillStyle = "green";
+        this._ctx.fillStyle = "black";
         this._ctx.textAlign = "center";
-        this._ctx.fillText(message, this._width/2, startHeight+25);
+        this._ctx.fillText(message, this._width/2, startHeight+45);
     },
 
 };
