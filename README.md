@@ -17,8 +17,13 @@ Current POC stores user events in local storage for demo. If you want to scale t
 - Does not use any third party tools like vwo, google analytics, etc..
 
 
-HeatMap Tracking from user Clicks
+#### HeatMap Tracking from User Clicks
+Shows where all areas the user has clicked in your website
 <img width="1641" alt="image" src="https://user-images.githubusercontent.com/17333491/152161564-d914445f-d639-4c01-a51e-ca9b47e662e0.png">
+
+#### ScrollMap tracking from User Scrolls
+Shows how much percentage of your customers actually scroll to what level for you to arrange your clickable elements
+<img width="535" alt="image" src="https://user-images.githubusercontent.com/17333491/152208446-f55980ac-c6da-4e41-a0a1-0c936e9b521b.png">
 
 
 
