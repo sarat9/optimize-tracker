@@ -1,8 +1,12 @@
 # optimize-tracker
-Optimize Tracker   
-Inbuilt Optimization Tool features without third party add ons
+### Optimize Tracker - Inbuilt Optimization Tool features without third party add ons
 
-Many third party optimization tools online provide lot of optimization techniques like heatmaps, scrollmaps and funneling. Popular tools include Google analytics, VWO, Optimizaly, etc. The current POC **does not use any of them and is inbuilt.**
+#
+#
+
+### Does Not Use any Third Party Plugin and is InBuilt tracker
+The current POC **Does Not Use** any of tools like Google analytics, VWO, Optimizaly, etc and is **InBuilt**.
+Many third party optimization tools online provide lot of optimization techniques like heatmaps, scrollmaps and funneling. 
 
 The current POC project offers generating **inbuit optimizing features like heatmaps, etc** without using or paying for any thirdparty vendor.
 It generates heatmaps etc on basis of your user click data.
@@ -10,12 +14,13 @@ It generates heatmaps etc on basis of your user click data.
 Current POC stores user events in local storage for demo. If you want to scale to a realtime project, please use a Database to store the events.
 
 # Current POC features
+- Does not use any third party tools like vwo, google analytics, etc..
 - Generates HeatMap for Clicks
 - Routing through pages gives page level heatmaps
 - Uses Local Storage to save click events
 - Scrollable Click HeatMap
-- Does not use any third party tools like vwo, google analytics, etc..
-
+- ScrollMap
+- Routing through pages gives page level scrollmaps
 
 #### HeatMap Tracking from User Clicks
 Shows where all areas the user has clicked in your website
