@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import useLocalStorageStateless from "../hooks/useLocalStorageStateless";
 import { debounce } from "lodash";
-
+import HeatMap from "./HeatMap";
+import ScrollMap from "./ScrollMap";
 /**
 Sample Data Payload Structure
 let eventData = {
@@ -18,8 +19,9 @@ let eventData = {
  */
 
 
-function Optimizer() {
+function Optimizer(props) {
 
+  const { enableTrackingClickHeatMap, showClickHeapMap, enableTrackingScrollMap, showScrollMap } = props
   const [getMouseTracks, setMouseTracks] = useLocalStorageStateless('mouseTracks')
   const [getScrollTracks, setScrollTracks] = useLocalStorageStateless('scrollTracks')
 
@@ -80,8 +82,8 @@ function Optimizer() {
   }
 
   useEffect(()=>{
-    trackClickHeatMap()
-    trackScrollMap()
+    enableTrackingClickHeatMap&&trackClickHeatMap()
+    enableTrackingScrollMap&&trackScrollMap()
   },[])
 
   useEffect(()=>{
@@ -93,10 +95,19 @@ function Optimizer() {
   
 
   return (
-    <div className="optimizer-class">
-        <h2>Optimizer</h2>
+    <div className="optimizer-class" style={{width:'100vw', height:'100vh'}}>
+        <span>Some Random Text</span>
+        {showClickHeapMap&&<HeatMap />}
+        {showScrollMap&&<ScrollMap />}
     </div>
   );
+}
+
+Optimizer.defaultProps ={
+  enableTrackingClickHeatMap : false,
+  showClickHeapMap: false,
+  enableTrackingScrollMap : false,
+  showScrollMap: false,
 }
 
 export default Optimizer;

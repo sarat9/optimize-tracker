@@ -19,7 +19,7 @@ function HeatMap() {
         
         var canvas = document.getElementById("canvas");
         canvas.width = document.body.clientWidth || window.innerWidth || window.outerWidth;
-        canvas.height = window.outerHeight || document.body.clientHeight || window.innerHeight || window.outerHeight;
+        canvas.height = document.body.clientHeight || window.innerHeight || window.outerHeight;
         // var heat = simpleheat('canvas');
         var heat = new HeatMapLib('canvas');
         // set data of [[x, y, value], ...] format
@@ -36,7 +36,7 @@ function HeatMap() {
 
   return (
     <>
-        <canvas id="canvas" style={{position:'absolute', top: '0px'}}></canvas>
+        <canvas id="canvas" style={{position:'absolute', top: '0px', left: '0px'}}></canvas>
     </>
   );
 }

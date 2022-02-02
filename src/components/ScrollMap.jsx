@@ -90,7 +90,7 @@ function ScrollMap() {
 
   return (
     <>
-        <canvas id="scrollMapCanvas" style={{position:'absolute', top: '0px'}}></canvas>
+        <canvas id="scrollMapCanvas" style={{position:'absolute', top: '0px', left: '0px'}}></canvas>
     </>
   );
 }
