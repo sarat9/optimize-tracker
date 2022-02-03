@@ -1,12 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import Optimizer from './components/Optimizer'
-import HeatMap from './components/HeatMap';
-import ScrollMap from './components/ScrollMap';
 import { useState } from 'react';
 
 function App() {
-  const [isHeatMapOn, setIsHeatMapOn] = useState(true)
+
 
   return (
     <div className="App">

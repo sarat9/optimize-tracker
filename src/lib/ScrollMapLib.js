@@ -15,6 +15,7 @@ ScrollMapLib.prototype = {
 
 
     intensity: 1, //change to number for intensity
+    
 
     // defaultGradient: {
     //     0.4: 'blue',
